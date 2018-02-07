@@ -16,12 +16,13 @@ def sentence_tracker(declarative_u, k, detections, grounding_set):
 		HMM_tracker = ??max(high detection + high coherence)
 
 	for i in xrange(groundings(parse)):	
-	HMM_grounding =	???(HMM_tracker)
+		HMM_grounding =	???(HMM_tracker)
 
 	perceptual_
 	existential_
 	return declarative_correspondances
-	
+
+
 
 def dcg(impreative_u, declarative_correspondances, grounding_set):	
 	treelike_order
@@ -64,3 +65,41 @@ dcg:
 	beam search, feature vectors
 sentence_tracker:
 	EM
+
+
+#-o-o-o-o-o-oo-o-o-o-o-o-o-o-o-o-o--o-o-ooooooooooooooooooooooooooooooo-----
+###From Jair Paper
+LEXICON: #17 elements
+
+def parser(sentence):
+	words = use_lexicon(sentence)
+	return words
+
+
+def object_tracker(part, frames)
+	for i in length(frames):
+		high_detections = detection(part, frame[i])
+		##Normalized + DPM
+		high_coherence = coherence(part, frame[i], frame[i+1])
+		## Normalized optical flow(frames)
+
+	HMM = max(lamb*high_detections + (1-lamb)*high_coherences)
+	##Viterbi algorithm
+	##MAP
+
+	return HMM
+
+def sentence_tracker (frames, sentence, word_meanings):	
+	parsed = parse(sentence)
+	participants = parse_participants(parsed)	
+
+	for i, participant in enumerate(participants):
+		participants_track[i], socre[i] = object_tracker(part, frames) 
+
+	
+	word_meanings
+
+	sentence_model	
+
+	return participant_tracks, score, word_meanings
+
